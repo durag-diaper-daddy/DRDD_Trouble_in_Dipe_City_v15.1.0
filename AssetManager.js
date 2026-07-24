@@ -53,7 +53,7 @@
   var MANIFEST = {
     playerDRDD:              { file: 'drdd.glb',          height: 2.0, swap:false, why:'walk cycle needs userData.ll/rl/ls/rs/hs pivots' },
     characterDRDDFrogTop:    { file: 'drdd_frog.glb',     height: 2.0 },
-    characterDipeGenie:      { file: 'genie.glb',         height: 3.0 },
+    characterDipeGenie:      { file: 'genie.glb',         height: 1.0 },
     characterMicFlex:        { file: 'micflex.glb',       height: 2.0 },
     characterMicFlexDurag:   { file: 'micflex_durag.glb', height: 2.0, swap:false, why:'rage gauge tints userData.bodyMesh' },
     characterDuragDada:      { file: 'duragdada.glb',     height: 2.1 },
