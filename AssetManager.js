@@ -51,7 +51,7 @@
   // Keys match Factory function names exactly. Missing files are fine: that
   // character just keeps its placeholder (one summary line in diagnostics).
   var MANIFEST = {
-    playerDRDD:              { file: 'drdd.glb',          height: 2.0, swap:false, why:'walk cycle needs userData.ll/rl/ls/rs/hs pivots' },
+    playerDRDD:              { file: 'drdd.glb',          height: 1.2, swap:false, why:'walk cycle needs userData.ll/rl/ls/rs/hs pivots' },
     characterDRDDFrogTop:    { file: 'drdd_frog.glb',     height: 2.0 },
     characterDipeGenie:      { file: 'genie.glb',         height: 3.0 },
     characterMicFlex:        { file: 'micflex.glb',       height: 2.0 },
