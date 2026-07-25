@@ -51,9 +51,9 @@
   // Keys match Factory function names exactly. Missing files are fine: that
   // character just keeps its placeholder (one summary line in diagnostics).
   var MANIFEST = {
-    playerDRDD:              { file: 'drdd.glb',          height: 3.0, swap:false, load:true, why:'auto-swap off — the player rig system adopts this model itself (adoptPlayerGLB in the game) and drives its animation clips' },
-    characterDRDDFrogTop:    { file: 'drdd_frog.glb',     height: 3.0 },
-    characterDipeGenie:      { file: 'genie.glb',         height: 0.9 },
+    playerDRDD:              { file: 'drdd.glb',          height: 2.0, swap:false, load:true, why:'auto-swap off — the player rig system adopts this model itself (adoptPlayerGLB in the game) and drives its animation clips' },
+    characterDRDDFrogTop:    { file: 'drdd_frog.glb',     height: 2.7 },
+    characterDipeGenie:      { file: 'genie.glb',         height: 0.7 },
     characterMicFlex:        { file: 'micflex.glb',       height: 2.0 },
     characterMicFlexDurag:   { file: 'micflex_durag.glb', height: 2.0, swap:false, why:'rage gauge tints userData.bodyMesh' },
     characterDuragDada:      { file: 'duragdada.glb',     height: 2.1 },
