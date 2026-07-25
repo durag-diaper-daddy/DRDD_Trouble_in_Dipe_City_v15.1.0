@@ -51,11 +51,11 @@
   // Keys match Factory function names exactly. Missing files are fine: that
   // character just keeps its placeholder (one summary line in diagnostics).
   var MANIFEST = {
-    playerDRDD:              { file: 'drdd.glb',          height: 4.0, swap:false, load:true, why:'auto-swap off — the player rig system adopts this model itself (adoptPlayerGLB in the game) and drives its animation clips' },
-    characterDRDDFrogTop:    { file: 'drdd_frog.glb',     height: 3.7 },
-    characterDipeGenie:      { file: 'genie.glb',         height: 1.4 },
-    characterMicFlex:        { file: 'micflex.glb',       height: 2.5 },
-    characterMicFlexDurag:   { file: 'micflex_durag.glb', height: 2.0, swap:false, why:'rage gauge tints userData.bodyMesh' },
+    playerDRDD:              { file: 'drdd.glb',          height: 3.7, swap:false, load:true, why:'auto-swap off — the player rig system adopts this model itself (adoptPlayerGLB in the game) and drives its animation clips' },
+    characterDRDDFrogTop:    { file: 'drdd_frog.glb',     height: 3.3 },
+    characterDipeGenie:      { file: 'genie.glb',         height: 1.3 },
+    characterMicFlex:        { file: 'micflex.glb',       height: 2.3 },
+    characterMicFlexDurag:   { file: 'micflex_durag.glb', height: 2.5, swap:false, why:'rage gauge tints userData.bodyMesh' },
     characterDuragDada:      { file: 'duragdada.glb',     height: 2.1 },
     characterDuragDadaDurag: { file: 'duragdada_durag.glb', height: 2.1 },
     enemyStooge_Moe:         { file: 'stooge_moe.glb',    height: 1.7, swap:false, why:'walk cycle needs userData.legPivots' },
