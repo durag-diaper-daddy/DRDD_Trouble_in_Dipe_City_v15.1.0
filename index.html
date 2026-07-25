@@ -6686,7 +6686,7 @@ function deliverReload(){
         var cx=Math.cos(a)*18, cz=Math.sin(a)*18;
         buildEnemy(cx,0.82,cz,9,1.8);
         var ce=enemyList[enemyList.length-1];
-        ce.hp=2; ce.maxHp=2; ce.speed=3.5;
+        ce.hp=2; ce.maxHp=2; ce.speed=3.7;
         ce.moveType='chase'; ce.chaseRange=40;
         ce.startX=cx; ce.startZ=cz;
       });
@@ -7666,7 +7666,7 @@ function buildCarWitch(x,y,z){
   const pl=new THREE.PointLight(0x44ff44,1.5,6); pl.position.set(0.85,0.4,0); g.add(pl);
   g.position.set(x,y,z); scene.add(g);
   enemyList.push({group:g,alive:true,type:99,x:x,y:y,z:z,startX:x,startZ:z,
-    patrolRange:8,speed:4.0,dir:1,phase:0,bobY:0,squash:1,
+    patrolRange:8,speed:4.2,dir:1,phase:0,bobY:0,squash:1,
     dying:false,dyingTimer:0,mudHit:false,mudTimer:0,legPivots:null,legPhase:0,
     moveType:'witch',lDir:1,lPhase:0,lTimer:0,hopTimer:Math.random()*2,
     hopVelY:0,hopOffY:0,hp:2,dmg:1,flyTimer:3+Math.random()*2,flying:false,flyT:0});
@@ -7677,7 +7677,7 @@ function buildMotoStooge(x,y,z){
   const g=Factory.enemyMotoStooge();
   g.position.set(x,y,z); scene.add(g);
   enemyList.push({group:g,alive:true,type:98,x:x,y:y,z:z,startX:x,startZ:z,
-    patrolRange:8,speed:4.5,dir:1,phase:0,bobY:0,squash:1,
+    patrolRange:8,speed:4.7,dir:1,phase:0,bobY:0,squash:1,
     dying:false,dyingTimer:0,mudHit:false,mudTimer:0,legPivots:null,legPhase:0,
     moveType:'moto',lDir:1,lPhase:0,lTimer:0,hopTimer:999,
     hopVelY:0,hopOffY:0,hp:2,dmg:1});
@@ -7688,7 +7688,7 @@ function buildFatStooge(x,y,z){
   const g=Factory.enemyFatStooge();
   g.position.set(x,y,z); scene.add(g);
   enemyList.push({group:g,alive:true,type:97,x:x,y:y,z:z,startX:x,startZ:z,
-    patrolRange:7,speed:1.8,dir:1,phase:0,bobY:0,squash:1,
+    patrolRange:7,speed:1.9,dir:1,phase:0,bobY:0,squash:1,
     dying:false,dyingTimer:0,mudHit:false,mudTimer:0,legPivots:null,legPhase:0,
     moveType:'fat',lDir:1,lPhase:0,lTimer:0,hopTimer:999,
     hopVelY:0,hopOffY:0,hp:2,dmg:2});
@@ -8194,11 +8194,11 @@ function buildLevel3(){
   // ── THREE BOSS ENEMIES ─────────────────────────────────────────────────────
   // Spread boss enemies across the larger colosseum arena
   buildCarWitch(-15,0.82,-87);
-    {var _ec=enemyList[enemyList.length-1];_ec.hp=2;_ec.maxHp=2;_ec.name='china';_ec.speed=2.8;_ec.attackTimer=4;_ec.attackCooldown=6.0;_ec.group.scale.set(1.25,1.25,1.25);_ec.moveType='chase';_ec.startX=-15;_ec.startZ=-87;}
+    {var _ec=enemyList[enemyList.length-1];_ec.hp=2;_ec.maxHp=2;_ec.name='china';_ec.speed=2.9;_ec.attackTimer=4;_ec.attackCooldown=6.5;_ec.group.scale.set(1.25,1.25,1.25);_ec.moveType='chase';_ec.startX=-15;_ec.startZ=-87;}
   buildMotoStooge(15,0.82,-102);
-    {var _ef=enemyList[enemyList.length-1];_ef.hp=2;_ef.maxHp=2;_ef.name='freaky';_ef.speed=2.6;_ef.attackTimer=5;_ef.attackCooldown=7.0;_ef.group.scale.set(1.2,1.2,1.2);_ef.moveType='chase';_ef.startX=15;_ef.startZ=-102;}
+    {var _ef=enemyList[enemyList.length-1];_ef.hp=2;_ef.maxHp=2;_ef.name='freaky';_ef.speed=2.7;_ef.attackTimer=5;_ef.attackCooldown=7.5;_ef.group.scale.set(1.2,1.2,1.2);_ef.moveType='chase';_ef.startX=15;_ef.startZ=-102;}
   buildFatStooge(0,0.82,-117);
-    {var _ed=enemyList[enemyList.length-1];_ed.hp=3;_ed.maxHp=3;_ed.name='dumbass';_ed.speed=1.8;_ed.attackTimer=6;_ed.attackCooldown=8.0;_ed.group.scale.set(1.3,1.3,1.3);_ed.moveType='chase';_ed.startX=0;_ed.startZ=-117;}
+    {var _ed=enemyList[enemyList.length-1];_ed.hp=3;_ed.maxHp=3;_ed.name='dumbass';_ed.speed=1.9;_ed.attackTimer=6;_ed.attackCooldown=8.5;_ed.group.scale.set(1.3,1.3,1.3);_ed.moveType='chase';_ed.startX=0;_ed.startZ=-117;}
 
   // ── REGULAR ARENA ENEMIES ─────────────────────────────────────────────────
   // Arena guards — chase aggressively, spread across arena
@@ -8207,9 +8207,9 @@ function buildLevel3(){
     var e=enemyList[enemyList.length-1];
     e.moveType='chase'; e.startX=x; e.startZ=z;
   }
-  arenaChaser( 0, -60, 3.0); // mid chaser
-  arenaChaser(-16,-78, 2.8); // left chaser
-  arenaChaser( 16,-78, 2.8); // right chaser
+  arenaChaser( 0, -60, 2.9); // mid chaser
+  arenaChaser(-16,-78, 2.7); // left chaser
+  arenaChaser( 16,-78, 2.7); // right chaser
   // (near-exit chasers removed — they blocked the exit)
 
   // ── CHAINS AND COINS ──────────────────────────────────────────────────────
@@ -9436,7 +9436,7 @@ function updateRoadstumbler(dt){
       var cdx=RS.lockTarget.x-RS.x, cdz=RS.lockTarget.z-RS.z;
       var cl=Math.sqrt(cdx*cdx+cdz*cdz)||1;
       RS.chargeDir={x:cdx/cl,z:cdz/cl};
-      RS.chargeSpeed=18;
+      RS.chargeSpeed=17;
       RS.group.traverse(function(c){if(c.isMesh&&c.material){
         c.material.emissive=new THREE.Color(0x000000); c.material.emissiveIntensity=0;
       }});
