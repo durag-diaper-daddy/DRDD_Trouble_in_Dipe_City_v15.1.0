@@ -23,7 +23,7 @@
  * ╚══════════════════════════════════════════════════════════════════╝
  */
 
-window.USE_PLACEHOLDERS = true; // set false to load /assets/*.glb instead
+window.USE_PLACEHOLDERS = false; // set false to load /assets/*.glb instead
 
 (function () {
   'use strict';
